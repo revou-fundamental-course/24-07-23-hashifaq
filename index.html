@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Kalu Travel Agent</title>
+</head>
+<body>
+    <header>
+        <!-- NAV SECTION -->
+        <section id="headerNavigation">
+            <img src="assets/logo3.png" width="110px" height="50px" href="#headerNavigation">
+            <!-- <a href="assets/logo.png"></a> -->
+            <nav id="navigation">
+                <a onclick="scrollHome()"><b>Home</b></a>
+                <a onclick="scrollOurPackage()"><b>Our Package</b></a>
+                <a onclick="scrollBookNow()"><b>Book Now</b></a>
+            </nav>
+        </section>
+        <!-- TITLE SECTION -->
+        <section class="headerTitle">
+            <h1>Kalu's Travel, Your Favourite Travel Agent</h1>
+            <h3>Explore, Experience, Enjoy!</h3>
+        </section>
+    </header>
+    <main>
+        <section id="callUs">
+            <article id="article">
+                <div class="content">
+                    <img src="assets/banner1.jpg" class="banner">
+                    <img src="assets/banner2.jpg" class="banner">
+                    <img src="assets/banner3.jpg" class="banner">
+                    <img src="assets/banner4.jpg" class="banner">
+                    <img src="assets/banner5.jpg" class="banner">
+                    <h5>"i had a wonderful tour and its all thanks to Kalu's Travel!"</h5>
+                    <section id="user">
+                        <img src="assets/user2.png" alt="" width="140" height="40" class="user2">
+                    </section>
+                </div>
+                <article id="information">
+                    <section>
+                       <p id="intro">Welcome to Kalu's Travel, your gateway to unforgettable adventures! We curate exceptional travel experiences tailored to your desires. Enjoy hassle-free journeys and create lasting memories with us today!</p>
+                    </section>
+                    <section>
+                        <section id="listintro">
+                             <ul>
+                                <li>Handpicked Destinations: Experience the best of each location with carefully curated travel destinations that offer unique cultural experiences and breathtaking landscapes.</li>
+                            </ul>
+                        </section>
+                        <section id="listintro">
+                            <ul>
+                                <li>Local Cuisines: Delight your taste buds with authentic local cuisines, giving you a taste of the region's rich culinary heritage and flavors.</li>
+                            </ul>
+                        </section>
+                        <section id="listintro">
+                            <ul>
+                                <li>Hassle-Free Journey: Enjoy a stress-free and seamless journey as our expert guides take care of all the logistics, leaving you to fully immerse yourself in the adventure and create cherished memories.</li>
+                            </ul>
+                        </section>
+                    </section>
+                </article>
+            </article>
+            <section class="form">
+                <h2>Contact Us</h2>
+                <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima</p>
+                <form 
+                    name="fillform"
+                    onsubmit="return validateForm()">
+                    <label for="name">Your Name:</label><br>
+                    <input placeholder="name" type="text" id="name" name="name"><br>
+                    <span id="name-error" style="color: red; display: none;">Please enter your name.</span><br>
+            
+                    <label for="email">Email Address:</label><br>
+                    <input placeholder="email" type="text" id="email" name="email"><br>
+                    <span id="email-error" style="color: red; display: none;">Please enter a valid email address.</span><br>
+            
+                    <label for="interest">What you interested in:</label><br>
+                    <select id="interest" name="interest">
+                        <option selected>Select option</option>
+                        <option>Pantai</option>
+                        <option>Gunung</option>
+                        <option>Laut</option>
+                        <option>Museum</option>
+                        <option>Pedesaan</option>
+                        <option>Gurun</option>
+                    </select><br>
+                    <span id="interest-error" style="color: red; display: none;">Please select an option.</span><br>
+            
+                    <button type="submit" class="button">Submit</button>
+                </form>
+
+                <script src="./js/script.js" type="text/javascript"></script>
+            </section>            
+        </section>
+        <section id="package">
+            <h1>Our Package</h1>
+        </section>
+        <section id="listPackage">
+            <section id="dest">
+                <div class="destination">
+                    <img src="assets/destination.png">
+                    <h2>Bali</h2>
+                </div>
+                <p id="desc">Travel dan wisata di Bali. Kunjungi cagar budaya dan kuliner yang menarik</p>
+            </section>
+            <section id="dest">
+                <div class="destination">
+                    <img src="assets/destination.png">
+                    <h2>Surabaya</h2>
+                </div>
+                <p id="desc">Travel dan wisata di Bali. Kunjungi cagar budaya dan kuliner yang menarik</p>
+            </section>
+            <section id="dest">
+                <div class="destination">
+                    <img src="assets/destination.png">
+                    <h2>Bandung</h2>
+                </div>
+                <p id="desc">Travel dan wisata di Bali. Kunjungi cagar budaya dan kuliner yang menarik</p>
+            </section>
+        </section>
+        <section id="listPackage">
+            <section id="dest">
+                <div class="destination">
+                    <img src="assets/destination.png">
+                    <h2>Swiss</h2>
+                </div>
+                <p id="desc">Travel dan wisata di Bali. Kunjungi cagar budaya dan kuliner yang menarik</p>
+            </section>
+            <section id="dest">
+                <div class="destination">
+                    <img src="assets/destination.png">
+                    <h2>Thailand</h2>
+                </div>
+                <p id="desc">Travel dan wisata di Bali. Kunjungi cagar budaya dan kuliner yang menarik</p>
+            </section>
+            <section id="dest">
+                <div class="destination">
+                    <img src="assets/destination.png">
+                    <h2>Australia</h2>
+                </div>
+                <p id="desc">Travel dan wisata di Bali. Kunjungi cagar budaya dan kuliner yang menarik</p>
+            </section>
+        </section>
+        <section id="book" class="book">
+            <section >
+                <h2 id="closing1">Make Your Tour Amazing with Us</h2>
+            </section>
+            <section>
+                <p id="closing2">
+                    Unleash unforgettable adventures with Kalu's Travel. Let us create your dream journey today. 
+                </p>
+                <p id="closing3">
+                    Explore, experience, and enjoy with Kalu's Travel. Your journey awaits! 
+                </p>
+            </section>
+            <button class="button">
+                Book Now
+            </button>
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="policy">
+            <h6>Terms of service</h6>
+            <h6>Privacy policy</h6>
+        </section>
+        <h6 id="copyright">copyright &copy; shifa</h6>
+      </footer>
+</body>
+</html>
